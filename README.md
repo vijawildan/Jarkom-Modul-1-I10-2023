@@ -5,4 +5,4 @@ Computer Network Practicum 1st Module I10
 | Name                        | NRP        |
 |-----------------------------|------------|
 |Riski Ilyas                  | 5025211189 |
-|                             |            |
+|Vija Wildan Gita Prabawa     | 5025211261 |
