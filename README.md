@@ -44,10 +44,24 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 To find the checksum in packet 130, first, we need to go to the "Go" menu, then select "Go To Packet," and enter 130 to navigate to packet 130. Consequently, we can view its checksum in the "User Datagram Protocol" section. In this case, the checksum value is found to be `0x18e5`.
 
 ## Flag 5
+```
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 - Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
 - Port berapakah pada server yang digunakan untuk service SMTP?
 - Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?
+```
+To answer the question, we need to extract the zip file first by exporting the object to EMF. By exporting it, it will reveal the password that encoded in Base64.
+![no5](https://media.discordapp.net/attachments/919468862725046322/1154755442094907473/image.png?width=1121&height=702)
+After we decoded the password, we can put it into the zip file and got the text file that consist of the netcat. From that we can start answer the question
+
+To answer the first question, we only need to find out how much packet that captured in the .pcap file.
+![no5a](https://media.discordapp.net/attachments/919468862725046322/1154758209240846376/image.png?width=1440&height=376)
+
+For the second question, we need to find what port used for SMTP.
+![no5b](https://media.discordapp.net/attachments/919468862725046322/1154757709380452463/image.png?width=1125&height=702)
+
+And the third question is that we need to find out which one is the public IP. Public IP doesn't start with 10.xxx.xxx.xx or 192.xxx.xxx.xxx so we can find it easily.
+![no5c](https://media.discordapp.net/attachments/919468862725046322/1154757766926319696/image.png?width=531&height=35)
 
 ## Flag 7
 ```
