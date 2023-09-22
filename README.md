@@ -74,7 +74,15 @@ ip.dst  == 184.87.193.88
 ```
 
 ## Flag 8
+```
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+```
+To answer this question we need this following query:
+```
+tcp.dstport == 80 || udp.dstport == 80
+```
+![no8](https://media.discordapp.net/attachments/919468862725046322/1154762288889348096/image.png?width=1123&height=702)
+
 
 ## Flag 9
 ```
@@ -88,5 +96,10 @@ ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 ```
 
 
-## FLag 10
+## Flag 10
+```
 Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+```
+For this question, I searched a string called Telnet. Inside of the packet with Telnet, we can find the credential with the format of `username:password`
+
+![no10](https://media.discordapp.net/attachments/919468862725046322/1154763536472485950/image.png?width=1118&height=702)
